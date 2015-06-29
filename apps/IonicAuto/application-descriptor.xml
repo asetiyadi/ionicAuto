@@ -14,7 +14,7 @@
     <mainFile>index.html</mainFile>
     <features/>
     <thumbnailImage>common/images/thumbnail.png</thumbnailImage>
-    <iphone bundleId="com.IonicAuto" version="1.0">
+    <iphone bundleId="com.ibm.cio.be.iphone.IonicAuto" version="1.0">
         <worklightSettings include="false"/>
         <security>
             <encryptWebResources enabled="false"/>

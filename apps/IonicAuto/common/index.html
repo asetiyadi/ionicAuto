@@ -8,12 +8,33 @@
     			<link rel="shortcut icon" href="images/favicon.png">
     			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
     		-->
-    		<link rel="stylesheet" href="css/main.css">
+    		<link rel="stylesheet" href="css/ionic.css"/>
+    		<link rel="stylesheet" href="css/main.css"/>
+    		
+    		<!-- LIBRARY -->
+    		<script type="text/javascript" src="js/lib/ionic.bundle.min.js"></script>
+    		
     		<script>window.$ = window.jQuery = WLJQ;</script>
+    		
+    		<!-- APPLICATION SCRIPTS -->
+    		<script type="text/javascript" src="js/app.js"></script>
+    		<script type="text/javascript" src="js/controller/MainController.js"></script>
     	</head>
     	<body style="display: none;">
-    		<!--application UI goes here-->
-    		Hello MobileFirst
+    	
+    		<ion-header-bar align-title="left" class="bar-positive">
+			  	<div class="buttons">
+			    	<button class="button" ng-click="doSomething()">Left Button</button>
+			  	</div>
+			  	<h1 class="title">Title!</h1>
+			  	<div class="buttons">
+			    	<button class="button">Right Button</button>
+			  	</div>
+			</ion-header-bar>
+			<ion-content>
+				<div data-ui-view="content"></div>
+			</ion-content>
+    		
     		<script src="js/initOptions.js"></script>
     		<script src="js/main.js"></script>
     		<script src="js/messages.js"></script>

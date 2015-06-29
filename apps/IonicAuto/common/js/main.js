@@ -13,4 +13,8 @@ function wlCommonInit(){
 	
 	// Common initialization code goes here
 	
+	console.log("loading Angular");
+	angular.element(document).ready(function() {
+		angular.bootstrap(document,['IonicAuto']);
+	});
 }
